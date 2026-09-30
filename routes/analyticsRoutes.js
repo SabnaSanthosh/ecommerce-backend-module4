@@ -1,0 +1,2 @@
+const r=require("express").Router(),a=require("../middleware/authMiddleware"),c=require("../controllers/analyticsController");
+r.get("/recommendations",a.authenticate,c.recommendations);module.exports=r;
